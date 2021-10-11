@@ -12,7 +12,7 @@ export default function Scene(props) {
     const [ref] = useSphere(() => ({mass: 1, position: props.position}))
 
     const [colorMap, displacementMap,normalMap, roughnessMap, aoMap] = useLoader(TextureLoader, [
-        'Grass001_1K_Color.jpg', 'Grass001_1K_Displacement.jpg', 'Grass001_1K_NormalDX.jpg', 'Grass001_1K_Roughness.jpg','Grass001_1K_AmbientOcclusion.jpg'
+        'PavingStones075_1K_Color.png', 'PavingStones075_1K_Displacement.png', 'PavingStones075_1K_NormalGL.png', 'PavingStones075_1K_Roughness.png','PavingStones075_1K_AmbientOcclusion.png'
     ])
     return (
         <mesh ref={ref}  scale={1} position={props.position}>

@@ -15,7 +15,7 @@ export default function Plane(props) {
     return (
         <mesh position={[0,0,0]}  rotation={props.rotation} ref={ref}>
             <planeBufferGeometry  args={props.size} />
-            <meshLambertMaterial color={props.color} />
+            <meshLambertMaterial  color={props.color} />
         </mesh>
     )
 }
